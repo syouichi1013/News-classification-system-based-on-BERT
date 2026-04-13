@@ -1,15 +1,16 @@
-News-Insight: BERT-based Classification & Interpretability
-Introduction
+#News-Insight: BERT-based Classification & Interpretability
+
+##Introduction
 A deep learning-based news classification system featuring real-time inference and Model Interpretability. It utilizes a fine-tuned BERT model to classify Chinese news. The system not only predicts categories but also provides an Attention Map to visualize the model's learning/decision process (i.e., which specific words or tokens the model focused on to make its judgment).
 
-Data & Model
+##Data & Model
 The system is built on the THUCNews dataset and uses a pre-trained BERT-Base-Chinese model. During inference, it extracts attention weights from the Transformer layers to highlight important words.
 
 Confidence Threshold: The system displays a probability distribution across all news categories.
 
 Interpretability: Darker highlights in the UI indicate words that the model "learned" were most relevant for the classification.
 
-File Structure
+##File Structure
 Plaintext
 ./
 ├── bert_pretrain/          # Pre-trained BERT model files
@@ -20,12 +21,13 @@ Plaintext
 ├── index.html              # Frontend (Visualization & Attention Map)
 ├── bert.py                 # Model architecture
 └── utils.py                # Text preprocessing and tokenization
-Training
+
+##Training
 Run the training script to fine-tune the BERT model on the THUCNews dataset:
 
-Bash
 python run.py --model bert
-Running the System
+
+##Running the System
 Start the Backend: Execute the FastAPI script to load the model:
 
 Bash
