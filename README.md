@@ -35,4 +35,6 @@ Launch the Interface: Open index.html in your browser.
 ```
 
 Analyze: Input news text and click "Run Inference." The system will output the predicted label and the Attention Map showing exactly which characters influenced the decision.
+
+## Output Result Example
 ![Prediction Image](result.png)
